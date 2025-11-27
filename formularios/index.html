@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Multipágina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Formulario Multipágina</h2>
+
+<div id="form-container">
+
+    <!-- Página 1 -->
+    <div class="page" id="page1">
+        <h3>Datos Personales</h3>
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
+
+        <label>Apellido:</label>
+        <input type="text" id="apellido">
+
+        <label>Edad:</label>
+        <input type="number" id="edad">
+
+        <button class="next">Siguiente</button>
+    </div>
+
+    <!-- Página 2 -->
+    <div class="page" id="page2">
+        <h3>Familiares</h3>
+
+        <div id="familiares-list"></div>
+
+        <h4>Agregar Familiar</h4>
+        <input type="text" id="fam-nombre" placeholder="Nombre">
+        <input type="text" id="fam-parentesco" placeholder="Parentesco">
+        <input type="number" id="fam-edad" placeholder="Edad">
+        <button id="add-familiar">Agregar</button>
+
+        <button class="back">Atrás</button>
+        <button class="next">Siguiente</button>
+    </div>
+
+    <!-- Página 3 -->
+    <div class="page" id="page3">
+        <h3>Condiciones Pre-Existentes</h3>
+
+        <div id="condiciones-list"></div>
+
+        <h4>Agregar Condición</h4>
+        <input type="text" id="cond-enfermedad" placeholder="Enfermedad">
+        <input type="text" id="cond-tiempo" placeholder="Tiempo con la enfermedad">
+
+        <button id="add-condicion">Agregar</button>
+
+        <button class="back">Atrás</button>
+        <button class="next">Siguiente</button>
+    </div>
+
+    <!-- Página 4 -->
+    <div class="page" id="page4">
+        <h3>Internamientos</h3>
+
+        <div id="intern-list"></div>
+
+        <h4>Agregar Internamiento</h4>
+        <input type="date" id="int-fecha">
+        <input type="text" id="int-centro" placeholder="Centro Médico">
+        <input type="text" id="int-diagnostico" placeholder="Diagnóstico">
+
+        <button id="add-intern">Agregar</button>
+
+        <button class="back">Atrás</button>
+        <button class="next">Siguiente</button>
+    </div>
+
+    <!-- Página 5 -->
+    <div class="page" id="page5">
+        <h3>Resumen de Datos Registrados</h3>
+
+        <pre id="resultado"></pre>
+
+        <button class="back">Atrás</button>
+        <button id="btn-grabar">Grabar Registro</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

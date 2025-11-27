@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+#form-container {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 14px;
+    margin: 4px;
+    border: none;
+    background: #4287f5;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2f6bd6;
+}
+
+#familiares-list div,
+#condiciones-list div,
+#intern-list div {
+    padding: 8px;
+    background: #e9e9e9;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
