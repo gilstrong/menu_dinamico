@@ -1,0 +1,12 @@
+{
+  "menu": [
+    { "titulo": "Inicio" },
+    {
+      "titulo": "Productos",
+      "submenus": [
+        { "titulo": "Laptops" },
+        { "titulo": "Teléfonos" }
+      ]
+    }
+  ]
+}
