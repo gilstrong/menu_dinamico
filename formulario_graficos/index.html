@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráfico Dinámico</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Librería Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h2>Generar Gráfico de Ventas por Mes</h2>
+
+    <form id="formVentas">
+        <label>Mes:</label>
+        <input type="text" id="mes" placeholder="Ej: Enero">
+
+        <label>Ventas:</label>
+        <input type="number" id="ventas" placeholder="Ej: 1200">
+
+        <button type="button" id="agregarBtn">Agregar Datos</button>
+        <button type="button" id="generarBtn">Generar Gráfico</button>
+    </form>
+
+    <!-- Contenedor del gráfico -->
+    <div id="graficoContainer">
+        <canvas id="grafico"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
