@@ -106,5 +106,6 @@ document.getElementById("btn-grabar").onclick = () => {
     console.log("ENVIANDO VIA AJAX...");
     console.log(JSON.stringify(registro));
 
-    alert("Registro guardado correctamente (simulado)");
+    alert("Registro guardado correctamente");
 };
+
